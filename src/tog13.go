@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-	var i, j  int = 2, 3
+	var i, j int = 2, 3
 	var f = 31
 	k := 3
 	c, python, java := true, false, "no!"

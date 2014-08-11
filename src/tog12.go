@@ -11,10 +11,11 @@ import (
 	"fmt"
 )
 
-var	i, j  int = 1, 3
+var i, j int = 1, 3
 var c, python, java = false, true, "false"
+
 func main() {
 	fmt.Println(i, j)
 	fmt.Println(c, python, java)
+	fmt.Printf("%T", java)
 }
-
