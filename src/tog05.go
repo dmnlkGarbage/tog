@@ -7,7 +7,7 @@
  */
 package main
 
-import(
+import (
 	"fmt"
 	"math"
 )
@@ -15,4 +15,3 @@ import(
 func main() {
 	fmt.Println("now you hava %g problems.", math.Nextafter(2, 3))
 }
-
