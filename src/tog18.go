@@ -5,5 +5,17 @@
  * Time: 20:12
  * To change this template use File | Settings | File Templates.
  */
-package tog18
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	sum := 1
+	for	; sum < 1000 ; {
+		sum += sum
+	}
+	fmt.Println(sum)
+}
 
