@@ -5,9 +5,9 @@ import (
 	"strings"
 )
 
-func WordCount(s string) map[string]int {
+func WordCount(s string) (m map[string]int) {
 	//map作る
-	m := make(map[string] int)
+	m = make(map[string] int)
 	//まず空白区切りでバラす
 	val := strings.Fields(s)
 	//forで回して、既にある単語ならインクリメント
@@ -20,7 +20,7 @@ func WordCount(s string) map[string]int {
 		}
 
 	}
-	return m
+	return
 }
 
 func main() {
