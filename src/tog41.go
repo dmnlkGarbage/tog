@@ -6,12 +6,13 @@ import (
 )
 
 func WordCount(s string) (m map[string]int) {
-	//map作る
-	m = make(map[string] int)
 	//まず空白区切りでバラす
-	val := strings.Fields(s)
+	splittedStrings := strings.Fields(s)
+	//map作る
+	m = make(map[string] int, len(splittedStrings))
+
 	//forで回して、既にある単語ならインクリメント
-	for _, v := range val {
+	for _, v := range splittedStrings {
 		val, ok := m[v]
 		if ok {
 			m[v] = val +1
