@@ -21,7 +21,10 @@ func main() {
 
 	//Abserが実装されてないと判断されてる
 	v := Vertex{3, 4}
-	a = v
+	//a = v
+
+	// ポインタを入れればコンパイル通る
+	a = &v
 
 	fmt.Println(a.Abs())
 }
