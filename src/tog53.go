@@ -19,6 +19,10 @@ func main() {
 	// Abser型の変数に入る
 	a = f
 
+	//Abserが実装されてないと判断されてる
+	v := Vertex{3, 4}
+	a = v
+
 	fmt.Println(a.Abs())
 }
 
@@ -31,4 +35,15 @@ func (f MyFloat) Abs() float64 {
 		return float64(-f)
 	}
 	return float64(f)
+}
+
+// 適当な構造体
+type Vertex struct {
+	X,Y float64
+}
+
+// Absを実装してるように見える
+// *Vertexに対してのAbs。*を外すとコンパイル通る
+func (v *Vertex) Abs() float64 {
+	return math.Sqrt(v.X * v.X + v.Y * v.Y)
 }
